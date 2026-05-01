@@ -28,7 +28,7 @@
 </head>
 <body>
 <h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: April 2, 2026</p>
+<p>ChewPacaStudios  ·  Last Updated: April 29, 2026</p>
 <hr>
 <h3>1. Introduction</h3>
 <p>HarpHero is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
@@ -44,6 +44,16 @@
   <li>Never recorded, stored, or transmitted</li>
   <li>Only active during active gameplay sessions</li>
 </ul>
+<h3>Notifications</h3>
+<p>HarpHero may send you local notifications to support your practice habit:</p>
+<ul>
+  <li><strong>Streak reminders</strong> — if you haven't played today and your streak is at risk</li>
+  <li><strong>Inactivity reminders</strong> — after 3 or 7 days without playing</li>
+  <li><strong>Streak milestones</strong> — when you reach a 7, 30, or 60-day streak</li>
+  <li><strong>Weekly recap</strong> — a summary of your practice each Sunday</li>
+  <li><strong>App updates</strong> — when a newer version is available</li>
+</ul>
+<p>All notifications are generated on your device using locally stored data. No personal data is sent to any server to produce them. You can disable individual types in <strong>Settings → Notifications</strong>, or disable all notifications in your device's system settings.</p>
 <h3>Account and Authentication</h3>
 <p>HarpHero offers two ways to use the app:</p>
 <ul>
@@ -94,6 +104,23 @@
   <li>No personally identifiable information is included</li>
 </ul>
 <p>EU, EEA, and UK users are asked for explicit consent before crash reports are sent. Outside these regions, crash reporting is enabled by default. You can change this preference in <strong>Settings → Manage Data Consent</strong>.</p>
+<h3>Rewarded Ads (Unity LevelPlay / ironSource)</h3>
+<p>HarpHero shows optional rewarded ads powered by Unity LevelPlay (ironSource). Watching an ad is always your choice — it earns you a free play credit. LevelPlay and its ad network partners may collect:</p>
+<ul>
+  <li>Device identifiers (e.g. Android Advertising ID)</li>
+  <li>IP address and coarse location (derived from IP)</li>
+  <li>Ad interaction data (views, completions, skips)</li>
+</ul>
+<p>This data is used to serve and measure ads. EU, EEA, and UK users are asked for explicit consent before personalized ads are shown. Outside these regions, personalized ads may be shown by default based on your device's ad settings. You can opt out of ad personalization at any time in <strong>Settings → Manage Data Consent</strong>, or at the device level via <strong>Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
+<p>Advertising data practices are governed by ironSource's Privacy Policy at <strong>ironsrc.com/privacypolicy</strong>.</p>
+<h3>Premium Subscription</h3>
+<p>HarpHero offers an optional monthly subscription ("HarpHero Premium") purchased through Google Play. When you subscribe:</p>
+<ul>
+  <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
+  <li>Your subscription status (active/expired) and expiry date are stored in our cloud database (Firestore) linked to your account</li>
+  <li>Subscription management (renewal, cancellation, billing history) is handled entirely by Google Play</li>
+</ul>
+<p>You can cancel at any time via <strong>Google Play → Subscriptions</strong>. Cancellation takes effect at the end of the current billing period. A Google Play Games account is required to subscribe — Guest accounts cannot purchase a subscription.</p>
 <h3>Profile and Local Data</h3>
 <p>The following is stored <strong>only on your device</strong> and is never transmitted:</p>
 <ul>
@@ -111,13 +138,17 @@
   <li>To power global leaderboards (username and scores)</li>
   <li>To improve the app (analytics data)</li>
   <li>To restore your preferences between sessions (local data)</li>
+  <li>To serve optional rewarded ads that fund continued development (LevelPlay / ironSource)</li>
+  <li>To verify and manage your Premium subscription (Google Play Billing + Firebase)</li>
 </ul>
 <p>We do not sell your data to third parties.</p>
 <hr>
 <h3>4. Third-Party Services</h3>
 <h3>Firebase Authentication — handles account creation and sign-in securely.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Firestore — stores synced gameplay data in Google's cloud infrastructure.</h3>
+<h3>Firebase Firestore — stores synced gameplay data and Premium subscription status in Google's cloud infrastructure.</h3>
+<p>policies.google.com/privacy</p>
+<h3>Firebase Cloud Functions — server-side verification of Premium subscription purchase tokens.</h3>
 <p>policies.google.com/privacy</p>
 <h3>Firebase Analytics — app usage analytics (consent required).</h3>
 <p>policies.google.com/privacy</p>
@@ -125,6 +156,10 @@
 <p>policies.google.com/privacy</p>
 <h3>Google Play Games — authentication via your Play Games profile.</h3>
 <p>policies.google.com/privacy</p>
+<h3>Google Play Billing — processes all Premium subscription payments. We never receive or store your payment card details.</h3>
+<p>play.google.com/about/play-terms</p>
+<h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK).</h3>
+<p>ironsrc.com/privacypolicy</p>
 <hr>
 <h3>5. Data Deletion</h3>
 <h3>Delete Account (in Profile):</h3>
@@ -137,6 +172,8 @@
   <li><strong>Firebase Analytics data</strong> — per Google's policies (typically 14 months)</li>
   <li><strong>Firebase Auth account</strong> — until account deletion</li>
   <li><strong>Cloud gameplay data (Firestore)</strong> — until account deletion</li>
+  <li><strong>Premium subscription status (Firestore)</strong> — until account deletion or subscription expiry</li>
+  <li><strong>Ad interaction data (LevelPlay)</strong> — per ironSource's data retention policies</li>
   <li><strong>Local device data</strong> — until app uninstall or account deletion</li>
   <li><strong>Guest session identifier</strong> — deleted on app uninstall</li>
 </ul>
