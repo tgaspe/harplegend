@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarpHero — How to Create a Song Chart</title>
+  <style>
+    body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      color: #333;
+      line-height: 1.7;
+    }
+    h1 { font-size: 26px; margin-bottom: 4px; }
+    h2 { font-size: 19px; margin-top: 2rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 16px; margin-top: 1.5rem; margin-bottom: 0.4rem; }
+    .subtitle { color: #777; font-size: 14px; margin-bottom: 2rem; }
+    p { margin: 0.6rem 0; color: #595959; }
+    ul { color: #595959; padding-left: 1.5rem; }
+    li { margin: 0.3rem 0; }
+    a { color: #3030F1; word-break: break-word; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
+    .step-label {
+      display: inline-block;
+      background: #f0f0f0;
+      color: #555;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 4px;
+    }
+    .optional {
+      color: #999;
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .tip {
+      background: #f7f9ff;
+      border-left: 3px solid #3030F1;
+      padding: 0.6rem 1rem;
+      margin: 0.8rem 0;
+      color: #595959;
+      border-radius: 0 4px 4px 0;
+    }
+    .warning {
+      background: #fff8f0;
+      border-left: 3px solid #e07000;
+      padding: 0.6rem 1rem;
+      margin: 0.8rem 0;
+      color: #595959;
+      border-radius: 0 4px 4px 0;
+    }
+    .checklist { list-style: none; padding-left: 0; }
+    .checklist li::before { content: "☐  "; color: #aaa; }
+    .tool-link { margin: 0.8rem 0; }
+    .tool-link a { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<h1>How to Create a Song Chart</h1>
+<p class="subtitle">HarpHero · ChewPacaStudios</p>
+<hr>
+
+<p>You can upload your own songs to HarpHero using the <strong>My Songs</strong> section. Only the MIDI chart file is required — audio and cover art are optional.</p>
+
+<table style="border-collapse:collapse; margin: 1.2rem 0; color:#595959;">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding: 6px 16px 6px 0; border-bottom:1px solid #e0e0e0;">File</th>
+      <th style="text-align:left; padding: 6px 16px 6px 0; border-bottom:1px solid #e0e0e0;">Format</th>
+      <th style="text-align:left; padding: 6px 0; border-bottom:1px solid #e0e0e0;">Required</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 5px 16px 5px 0;">Chart file</td>
+      <td style="padding: 5px 16px 5px 0;"><code>.mid</code></td>
+      <td style="padding: 5px 0;">✅ Yes</td>
+    </tr>
+    <tr>
+      <td style="padding: 5px 16px 5px 0;">Audio file</td>
+      <td style="padding: 5px 16px 5px 0;"><code>.ogg</code></td>
+      <td style="padding: 5px 0;">Optional</td>
+    </tr>
+    <tr>
+      <td style="padding: 5px 16px 5px 0;">Cover art</td>
+      <td style="padding: 5px 16px 5px 0;">image</td>
+      <td style="padding: 5px 0;">Optional</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<span class="step-label">Step 1</span>
+<h3>Find a MIDI File</h3>
+<p>Search for your song on one of these sites — there are many others, but these are the ones I use most:</p>
+<ul>
+  <li><a href="https://www.midiworld.com/files/" target="_blank">MidiWorld</a> — large catalogue of free MIDI files</li>
+  <li><a href="https://bitmidi.com/" target="_blank">BitMidi</a> — easy search and preview</li>
+  <li><a href="https://www.enchor.us/" target="_blank">Enchor</a> — pre-charted tracks, usually the best quality</li>
+</ul>
+<div class="tip"><strong>Tip:</strong> Enchor songs come with a <code>.mid</code> file already charted to the melody. Search the song name, download the package, and look for the <code>.mid</code> file inside.</div>
+
+<hr>
+
+<span class="step-label">Step 2</span>
+<h3>Inspect the MIDI</h3>
+<p>Before editing, open the file in a MIDI viewer to understand its structure.</p>
+<div class="tool-link"><a href="https://signalmidi.app/" target="_blank">Signal MIDI</a> — free, browser-based (many other MIDI editors exist)</div>
+<p>Look for:</p>
+<ul>
+  <li>How many <strong>tracks/channels</strong> the file has</li>
+  <li>Which track contains the <strong>melody</strong> — the main tune, not drums, bass, or chords</li>
+  <li>Whether the notes look reasonable — not too dense, not empty</li>
+</ul>
+
+<hr>
+
+<span class="step-label">Step 3</span>
+<h3>Edit the MIDI</h3>
+<p>This is where you shape the chart to your liking. Common adjustments:</p>
+<ul>
+  <li><strong>Transpose notes</strong> by X semitones to match your harmonica's key</li>
+  <li><strong>Adjust note position, length, and velocity</strong> (volume)</li>
+  <li><strong>Change the BPM</strong> to make the chart easier or harder</li>
+  <li><strong>Change track instruments</strong> if needed</li>
+</ul>
+<div class="warning">
+  <strong>Harmonica limitations:</strong> A diatonic harmonica can only play the notes of a specific major scale. Many MIDI melodies contain notes your harmonica cannot produce. Go through the melody and remove or substitute any out-of-range notes — transpose them an octave, replace them with the nearest playable note, or remove them if they are passing tones.
+</div>
+<p>To see all note data as a spreadsheet:</p>
+<div class="tool-link"><a href="https://midi-to-csv.vercel.app/" target="_blank">MIDI to CSV</a> — convert your MIDI to a spreadsheet to inspect and fine-tune note data</div>
+
+<hr>
+
+<span class="step-label">Step 4</span>
+<h3>Extract the Harmonica Track</h3>
+<p>Once you are happy with the edits, save only the melody track as a separate MIDI file. This is the file HarpHero uses to drive the note lanes.</p>
+<ul>
+  <li><strong>Recommended name:</strong> <code>chart.mid</code></li>
+  <li>It should contain <strong>only the harmonica notes</strong> — no drums, chords, or other instruments</li>
+</ul>
+
+<hr>
+
+<span class="step-label">Step 5</span>
+<h3>Create the Audio File <span class="optional">(optional)</span></h3>
+<p>If you want a backing track playing during gameplay, convert your full MIDI (all instruments, not just the melody) to OGG.</p>
+<div class="tool-link"><a href="https://www.freeconvert.com/midi-to-ogg/download" target="_blank">FreeConvert MIDI → OGG</a></div>
+<ol>
+  <li>Upload your full <code>.mid</code> file</li>
+  <li>Download the <code>.ogg</code> result</li>
+</ol>
+<div class="tip"><strong>Why OGG?</strong> It is a highly storage-efficient audio format, important for mobile.</div>
+
+<hr>
+
+<span class="step-label">Step 6</span>
+<h3>Add Silence at the Start <span class="optional">(optional)</span></h3>
+<p>If you want a lead-in before the first note hits, shift both files forward by the same amount. I use <strong>3 seconds</strong>.</p>
+<p><strong>For <code>chart.mid</code>:</strong> Shift all MIDI notes forward by 3 seconds using a MIDI editor.</p>
+<p><strong>For the <code>.ogg</code></strong> (only if you created one in Step 5): add matching silence to the beginning.</p>
+<div class="tool-link"><a href="https://elysiatools.com/en/tools/audio-add-silence" target="_blank">Add Silence — Elysia Tools</a></div>
+<ol>
+  <li>Upload your <code>.ogg</code></li>
+  <li>Add <strong>3000 ms</strong> of silence to the <strong>beginning</strong></li>
+  <li>Download the result</li>
+</ol>
+<div class="warning">The silence must match exactly in both files — otherwise notes and music will be out of sync.</div>
+
+<hr>
+
+<span class="step-label">Step 7</span>
+<h3>Create the Album Art <span class="optional">(optional)</span></h3>
+<p>Find a fitting image on a free stock photo site:</p>
+<ul>
+  <li><a href="https://pixabay.com/photos/search/" target="_blank">Pixabay</a> — free, no attribution required</li>
+  <li><a href="https://www.pexels.com/" target="_blank">Pexels</a> — free, no attribution required</li>
+</ul>
+<p>Then design your cover in <a href="https://www.canva.com/" target="_blank">Canva</a> or any image editor:</p>
+<ul>
+  <li>Use a <strong>1000 × 1000 px</strong> square canvas</li>
+  <li>Add the song or album name in a stylish font</li>
+  <li>Export as JPG or PNG</li>
+</ul>
+
+<hr>
+
+<span class="step-label">Step 8</span>
+<h3>Upload to HarpHero</h3>
+<ol>
+  <li>Open HarpHero → tap <strong>My Songs</strong> → tap <strong>+</strong></li>
+  <li>Pick your <code>chart.mid</code> file</li>
+  <li>Pick your <code>.ogg</code> audio file (optional)</li>
+  <li>Pick your cover image (optional)</li>
+  <li>Enter the song <strong>title</strong>, <strong>artist</strong>, <strong>key</strong>, and <strong>difficulty</strong></li>
+  <li>Tap <strong>Save</strong></li>
+</ol>
+<p>Your song will appear in the My Songs carousel and is ready to play.</p>
+
+<hr>
+
+<h3>Quick Checklist</h3>
+<ul class="checklist">
+  <li><code>chart.mid</code> — melody track only, harmonica-playable notes</li>
+  <li><code>.ogg</code> audio — full mix with matching lead-in silence (optional)</li>
+  <li>Lead-in silence matches between chart and audio (optional)</li>
+  <li>Cover art — 1000 × 1000 px square (optional)</li>
+</ul>
+
+<hr>
+<p style="color:#aaa; font-size:13px;">HarpHero · ChewPacaStudios · <a href="https://tgaspe.github.io/harphero-privacy/" style="color:#aaa;">Privacy Policy</a></p>
+
+</body>
+</html>
