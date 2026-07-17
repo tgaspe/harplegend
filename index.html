@@ -3,212 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HarpHero Privacy Policy</title>
+  <title>HarpLegend</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
   <style>
+    * { box-sizing: border-box; }
     body {
       max-width: 860px;
       margin: 0 auto;
-      padding: 2.5rem 1.5rem 4rem;
+      padding: 4rem 1.5rem 4rem;
       font-family: Arial, sans-serif;
       font-size: 15px;
       color: #333;
       line-height: 1.7;
+      text-align: center;
     }
-    h1 { font-size: 26px; margin-bottom: 4px; }
-    h2 { font-size: 19px; margin-top: 2rem; margin-bottom: 0.5rem; }
-    h3 { font-size: 16px; margin-top: 1.5rem; margin-bottom: 0.4rem; }
-    .subtitle { color: #777; font-size: 14px; margin-bottom: 2rem; }
-    p { margin: 0.6rem 0; color: #595959; }
-    ul { color: #595959; padding-left: 1.5rem; }
-    li { margin: 0.3rem 0; }
-    a { color: #3030F1; word-break: break-word; }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2rem 0; }
-
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1.2rem;
+      border-radius: 18px;
+      display: block;
+    }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .subtitle { color: #777; font-size: 15px; margin-bottom: 2.5rem; }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    .btn {
+      display: block;
+      padding: 0.9rem 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 15px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .btn:hover {
+      border-color: #3030F1;
+      background: #f5f6ff;
+    }
+    .btn .desc {
+      display: block;
+      font-weight: normal;
+      color: #777;
+      font-size: 13px;
+      margin-top: 2px;
+    }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2.5rem 0; }
+    footer { color: #999; font-size: 13px; }
+    footer a { color: #3030F1; }
   </style>
 </head>
 <body>
-<h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: April 29, 2026</p>
+
+<img class="logo" src="assets/icon.png" alt="HarpLegend icon">
+<h1>HarpLegend</h1>
+<div class="subtitle">ChewPacaStudios (theo_dev)</div>
+
+<div class="links">
+  <a class="btn" href="privacy-policy.html">
+    Privacy Policy
+    <span class="desc">What we collect and how it's used</span>
+  </a>
+  <a class="btn" href="delete-account.html">
+    Delete Account
+    <span class="desc">Remove your account and data</span>
+  </a>
+  <a class="btn" href="song-guide.html">
+    Song Chart Guide
+    <span class="desc">How to create and upload your own songs</span>
+  </a>
+</div>
+
 <hr>
-<h3>1. Introduction</h3>
-<p>HarpHero is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
-<p>By using HarpHero, you agree to the practices described here.</p>
-<h3>App Package: com.chewpacastudios.harphero</h3>
-<h3>Contact: chewpacastudios@gmail.com</h3>
-<hr>
-<h3>2. Information We Collect</h3>
-<h3>Microphone</h3>
-<p>HarpHero uses your microphone to detect harmonica notes during gameplay. This audio is:</p>
-<ul>
-  <li>Processed entirely on your device</li>
-  <li>Never recorded, stored, or transmitted</li>
-  <li>Only active during active gameplay sessions</li>
-</ul>
-<h3>Notifications</h3>
-<p>HarpHero may send you local notifications to support your practice habit:</p>
-<ul>
-  <li><strong>Streak reminders</strong> — if you haven't played today and your streak is at risk</li>
-  <li><strong>Inactivity reminders</strong> — after 3 or 7 days without playing</li>
-  <li><strong>Streak milestones</strong> — when you reach a 7, 30, or 60-day streak</li>
-  <li><strong>Weekly recap</strong> — a summary of your practice each Sunday</li>
-  <li><strong>App updates</strong> — when a newer version is available</li>
-</ul>
-<p>All notifications are generated on your device using locally stored data. No personal data is sent to any server to produce them. You can disable individual types in <strong>Settings → Notifications</strong>, or disable all notifications in your device's system settings.</p>
-<h3>Account and Authentication</h3>
-<p>HarpHero offers two ways to use the app:</p>
-<ul>
-  <li><strong>Google Play Games</strong> — sign in using your Play Games profile. We receive a secure authentication token. No email address or password is collected or stored by us. Your Play Games display name is used to generate a username.</li>
-  <li><strong>Guest account</strong> — use the app anonymously. A temporary Firebase anonymous account is created. No personal information is collected and all data stays on your device only.</li>
-</ul>
-<p>We do not collect or store email addresses or passwords.</p>
-<h3>Username</h3>
-<p>When you sign in with Google Play Games for the first time, a username is automatically generated from your Play Games display name. This username is:</p>
-<ul>
-  <li>Stored in our cloud database to ensure uniqueness across all players</li>
-  <li>Publicly visible on in-game leaderboards</li>
-</ul>
-<h3>Gameplay Statistics and Progress</h3>
-<p>For Google Play Games accounts, the following is synced to our cloud database (Firebase Firestore):</p>
-<ul>
-  <li>Total songs played, play time, note accuracy stats, streaks</li>
-  <li>Personal best score, accuracy, and combo per song</li>
-  <li>Harmonica tuning calibration data (recorded frequencies per hole)</li>
-</ul>
-<p>Guest accounts store all of the above locally on your device only — nothing is sent to our servers.</p>
-<h3>Leaderboards</h3>
-<p>For Google Play Games accounts, your best score for each song is posted to a global leaderboard. The following is <strong>publicly visible to all players</strong>:</p>
-<ul>
-  <li>Username</li>
-  <li>Score, accuracy, and best combo per song</li>
-</ul>
-<p>Guest accounts do not appear on leaderboards.</p>
-<h3>Firebase Analytics</h3>
-<p>We use Google Firebase Analytics to understand how the app is used. It collects:</p>
-<ul>
-  <li>Device model, OS version, and app version</li>
-  <li>Session duration and usage patterns</li>
-  <li>General location (country/region, derived from IP address)</li>
-</ul>
-<p>We also send custom events when you play songs:</p>
-<ul>
-  <li><strong>song_started</strong> — song name, harp key, playback speed, practice mode</li>
-  <li><strong>song_completed</strong> — song name, score, accuracy, grade, note counts, duration</li>
-  <li><strong>song_quit</strong> — song name, seconds played</li>
-</ul>
-<p>Users in the EU, EEA, and UK are asked for explicit consent before analytics collection begins. Outside these regions, analytics is enabled by default. You can change your preference at any time in <strong>Settings → Manage Data Consent</strong>.</p>
-<h3>Firebase Crashlytics</h3>
-<p>We use Firebase Crashlytics to receive anonymous crash reports. It collects:</p>
-<ul>
-  <li>Device model, OS version, and app version</li>
-  <li>A stack trace describing where the crash occurred</li>
-  <li>No personally identifiable information is included</li>
-</ul>
-<p>EU, EEA, and UK users are asked for explicit consent before crash reports are sent. Outside these regions, crash reporting is enabled by default. You can change this preference in <strong>Settings → Manage Data Consent</strong>.</p>
-<h3>Rewarded Ads (Unity LevelPlay / ironSource)</h3>
-<p>HarpHero shows optional rewarded ads powered by Unity LevelPlay (ironSource). Watching an ad is always your choice — it earns you a free play credit. LevelPlay and its ad network partners may collect:</p>
-<ul>
-  <li>Device identifiers (e.g. Android Advertising ID)</li>
-  <li>IP address and coarse location (derived from IP)</li>
-  <li>Ad interaction data (views, completions, skips)</li>
-</ul>
-<p>This data is used to serve and measure ads. EU, EEA, and UK users are asked for explicit consent before personalized ads are shown. Outside these regions, personalized ads may be shown by default based on your device's ad settings. You can opt out of ad personalization at any time in <strong>Settings → Manage Data Consent</strong>, or at the device level via <strong>Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
-<p>Advertising data practices are governed by ironSource's Privacy Policy at <strong>ironsrc.com/privacypolicy</strong>.</p>
-<h3>Premium Subscription</h3>
-<p>HarpHero offers an optional monthly subscription ("HarpHero Premium") purchased through Google Play. When you subscribe:</p>
-<ul>
-  <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
-  <li>Your subscription status (active/expired) and expiry date are stored in our cloud database (Firestore) linked to your account</li>
-  <li>Subscription management (renewal, cancellation, billing history) is handled entirely by Google Play</li>
-</ul>
-<p>You can cancel at any time via <strong>Google Play → Subscriptions</strong>. Cancellation takes effect at the end of the current billing period. A Google Play Games account is required to subscribe — Guest accounts cannot purchase a subscription.</p>
-<h3>Profile and Local Data</h3>
-<p>The following is stored <strong>only on your device</strong> and is never transmitted:</p>
-<ul>
-  <li>Settings (volume, sensitivity, visual preferences, audio offset)</li>
-  <li>Profile picture</li>
-</ul>
-<h3>Photo Library</h3>
-<p>If you set a profile picture, the app reads one image from your photo library. That image is stored locally as a file and is never uploaded or transmitted.</p>
-<hr>
-<h3>3. How We Use Your Information</h3>
-<ul>
-  <li>To operate gameplay (microphone input)</li>
-  <li>To authenticate you and secure your account (Firebase Auth)</li>
-  <li>To sync and restore your game data across devices (Firestore)</li>
-  <li>To power global leaderboards (username and scores)</li>
-  <li>To improve the app (analytics data)</li>
-  <li>To restore your preferences between sessions (local data)</li>
-  <li>To serve optional rewarded ads that fund continued development (LevelPlay / ironSource)</li>
-  <li>To verify and manage your Premium subscription (Google Play Billing + Firebase)</li>
-</ul>
-<p>We do not sell your data to third parties.</p>
-<hr>
-<h3>4. Third-Party Services</h3>
-<h3>Firebase Authentication — handles account creation and sign-in securely.</h3>
-<p>policies.google.com/privacy</p>
-<h3>Firebase Firestore — stores synced gameplay data and Premium subscription status in Google's cloud infrastructure.</h3>
-<p>policies.google.com/privacy</p>
-<h3>Firebase Cloud Functions — server-side verification of Premium subscription purchase tokens.</h3>
-<p>policies.google.com/privacy</p>
-<h3>Firebase Analytics — app usage analytics (consent required).</h3>
-<p>policies.google.com/privacy</p>
-<h3>Firebase Crashlytics — anonymous crash reporting (consent required).</h3>
-<p>policies.google.com/privacy</p>
-<h3>Google Play Games — authentication via your Play Games profile.</h3>
-<p>policies.google.com/privacy</p>
-<h3>Google Play Billing — processes all Premium subscription payments. We never receive or store your payment card details.</h3>
-<p>play.google.com/about/play-terms</p>
-<h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK).</h3>
-<p>ironsrc.com/privacypolicy</p>
-<hr>
-<h3>5. Data Deletion</h3>
-<h3>Delete Account (in Profile):</h3>
-<p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
-<p>You may also visit <strong>tgaspe.github.io/harphero-privacy/delete-account</strong> or contact us at <strong>chewpacastudios@gmail.com</strong> to request manual deletion.</p>
-<hr>
-<h3>6. Data Retention</h3>
-<ul>
-  <li><strong>Microphone audio</strong> — never retained</li>
-  <li><strong>Firebase Analytics data</strong> — per Google's policies (typically 14 months)</li>
-  <li><strong>Firebase Auth account</strong> — until account deletion</li>
-  <li><strong>Cloud gameplay data (Firestore)</strong> — until account deletion</li>
-  <li><strong>Premium subscription status (Firestore)</strong> — until account deletion or subscription expiry</li>
-  <li><strong>Ad interaction data (LevelPlay)</strong> — per ironSource's data retention policies</li>
-  <li><strong>Local device data</strong> — until app uninstall or account deletion</li>
-  <li><strong>Guest session identifier</strong> — deleted on app uninstall</li>
-</ul>
-<hr>
-<h3>7. Children's Privacy</h3>
-<p>HarpHero is intended for users <strong>13 and older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has created an account, contact us and we will delete the account and associated data.</p>
-<hr>
-<h3>8. Your Rights</h3>
-<h3>European Economic Area and UK (GDPR)</h3>
-<ul>
-  <li>Access — request a copy of your personal data</li>
-  <li>Rectification — request correction of inaccurate data</li>
-  <li>Erasure — delete your account in-app or contact us</li>
-  <li>Portability — receive your data in a machine-readable format</li>
-  <li>Withdraw Consent — change analytics and crash report preferences in <strong>Settings → Manage Data Consent</strong></li>
-  <li>Restrict — request limits on how your data is used</li>
-</ul>
-<h3>California Residents (CCPA)</h3>
-<ul>
-  <li>Right to Know — what personal information is collected about you</li>
-  <li>Right to Delete — delete your account in-app or contact us</li>
-  <li>Right to Opt Out of Sale — we do not sell your data</li>
-</ul>
-<p>To make a request, contact us at: <strong>chewpacastudios@gmail.com</strong></p>
-<p>We will respond within 30–45 days.</p>
-<hr>
-<h3>9. Data Security</h3>
-<p>Local data is protected by the Android app sandbox. Account credentials are managed by Firebase Authentication and never stored by us directly. Cloud data (Firestore) is protected by Firebase security rules — only you can read or modify your own data. No method of data transmission is 100% secure.</p>
-<hr>
-<h3>10. Changes to This Policy</h3>
-<p>We may update this policy from time to time. The "Last Updated" date at the top will reflect any changes. Continued use of the app after changes are posted constitutes acceptance of the revised policy.</p>
-<hr>
-<h3>11. Contact Us</h3>
-<h3>ChewPacaStudios</h3>
-<p>chewpacastudios@gmail.com</p>
-<p>This policy applies to the HarpHero Android application (com.chewpacastudios.harphero) only.</p>
+
+<footer>
+  Developer: theo_dev · Questions? Contact <a href="mailto:chewpacastudios@gmail.com">chewpacastudios@gmail.com</a>
+</footer>
+
 </body>
 </html>
