@@ -30,7 +30,7 @@
 <body>
 <div class="subtitle"><strong>ChewPacaStudios (theo_dev)</strong> · <a href="index.html">Home</a> · <a href="delete-account.html">Delete Account</a></div>
 <h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: April 29, 2026</p>
+<p>ChewPacaStudios  ·  Last Updated: July 18, 2026</p>
 <hr>
 <h3>1. Introduction</h3>
 <p>HarpLegend is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
@@ -115,14 +115,6 @@
 </ul>
 <p>This data is used to serve and measure ads. EU, EEA, and UK users are asked for explicit consent before personalized ads are shown. Outside these regions, personalized ads may be shown by default based on your device's ad settings. You can opt out of ad personalization at any time in <strong>Settings → Manage Data Consent</strong>, or at the device level via <strong>Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
 <p>Advertising data practices are governed by ironSource's Privacy Policy at <strong>ironsrc.com/privacypolicy</strong>.</p>
-<h3>Premium Subscription</h3>
-<p>HarpLegend offers an optional monthly subscription ("HarpLegend Premium") purchased through Google Play. When you subscribe:</p>
-<ul>
-  <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
-  <li>Your subscription status (active/expired) and expiry date are stored in our cloud database (Firestore) linked to your account</li>
-  <li>Subscription management (renewal, cancellation, billing history) is handled entirely by Google Play</li>
-</ul>
-<p>You can cancel at any time via <strong>Google Play → Subscriptions</strong>. Cancellation takes effect at the end of the current billing period. A Google Play Games account is required to subscribe — Guest accounts cannot purchase a subscription.</p>
 <h3>Profile and Local Data</h3>
 <p>The following is stored <strong>only on your device</strong> and is never transmitted:</p>
 <ul>
@@ -132,7 +124,16 @@
 <h3>Photo Library</h3>
 <p>If you set a profile picture, the app reads one image from your photo library. That image is stored locally as a file and is never uploaded or transmitted.</p>
 <hr>
-<h3>3. How We Use Your Information</h3>
+<h3>3. Premium Subscription & Lifetime Purchase</h3>
+<p>HarpLegend offers two ways to unlock Premium: an optional monthly subscription ("HarpLegend Premium") or a one-time "Lifetime Premium" purchase, both bought through Google Play. In either case:</p>
+<ul>
+  <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
+  <li>Your Premium status is stored in our cloud database (Firestore) linked to your account — active/expired with a renewal date for the subscription, or permanent for Lifetime Premium</li>
+  <li>Payment management (renewal, cancellation, refunds, billing history) is handled entirely by Google Play</li>
+</ul>
+<p>You can cancel the monthly subscription at any time via <strong>Google Play → Subscriptions</strong>; cancellation takes effect at the end of the current billing period. Lifetime Premium is a single, non-recurring purchase that never expires and has nothing to cancel. A Google Play Games account is required to purchase either option — Guest accounts cannot make purchases.</p>
+<hr>
+<h3>4. How We Use Your Information</h3>
 <ul>
   <li>To operate gameplay (microphone input)</li>
   <li>To authenticate you and secure your account (Firebase Auth)</li>
@@ -141,16 +142,16 @@
   <li>To improve the app (analytics data)</li>
   <li>To restore your preferences between sessions (local data)</li>
   <li>To serve optional rewarded ads that fund continued development (LevelPlay / ironSource)</li>
-  <li>To verify and manage your Premium subscription (Google Play Billing + Firebase)</li>
+  <li>To verify and manage your Premium subscription or Lifetime Premium purchase (Google Play Billing + Firebase)</li>
 </ul>
 <p>We do not sell your data to third parties.</p>
 <hr>
-<h3>4. Third-Party Services</h3>
+<h3>5. Third-Party Services</h3>
 <h3>Firebase Authentication — handles account creation and sign-in securely.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Firestore — stores synced gameplay data and Premium subscription status in Google's cloud infrastructure.</h3>
+<h3>Firebase Firestore — stores synced gameplay data and Premium status (subscription or Lifetime Premium) in Google's cloud infrastructure.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Cloud Functions — server-side verification of Premium subscription purchase tokens.</h3>
+<h3>Firebase Cloud Functions — server-side verification of Premium purchase tokens (subscription and Lifetime Premium).</h3>
 <p>policies.google.com/privacy</p>
 <h3>Firebase Analytics — app usage analytics (consent required).</h3>
 <p>policies.google.com/privacy</p>
@@ -158,32 +159,32 @@
 <p>policies.google.com/privacy</p>
 <h3>Google Play Games — authentication via your Play Games profile.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Google Play Billing — processes all Premium subscription payments. We never receive or store your payment card details.</h3>
+<h3>Google Play Billing — processes all Premium payments (subscription and Lifetime Premium). We never receive or store your payment card details.</h3>
 <p>play.google.com/about/play-terms</p>
 <h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK).</h3>
 <p>ironsrc.com/privacypolicy</p>
 <hr>
-<h3>5. Data Deletion</h3>
+<h3>6. Data Deletion</h3>
 <h3>Delete Account (in Profile):</h3>
 <p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
 <p>You may also visit <strong>tgaspe.github.io/harplegend/delete-account</strong> or contact us at <strong>chewpacastudios@gmail.com</strong> to request manual deletion.</p>
 <hr>
-<h3>6. Data Retention</h3>
+<h3>7. Data Retention</h3>
 <ul>
   <li><strong>Microphone audio</strong> — never retained</li>
   <li><strong>Firebase Analytics data</strong> — per Google's policies (typically 14 months)</li>
   <li><strong>Firebase Auth account</strong> — until account deletion</li>
   <li><strong>Cloud gameplay data (Firestore)</strong> — until account deletion</li>
-  <li><strong>Premium subscription status (Firestore)</strong> — until account deletion or subscription expiry</li>
+  <li><strong>Premium status (Firestore)</strong> — until account deletion; subscriptions also end at expiry, Lifetime Premium does not expire</li>
   <li><strong>Ad interaction data (LevelPlay)</strong> — per ironSource's data retention policies</li>
   <li><strong>Local device data</strong> — until app uninstall or account deletion</li>
   <li><strong>Guest session identifier</strong> — deleted on app uninstall</li>
 </ul>
 <hr>
-<h3>7. Children's Privacy</h3>
+<h3>8. Children's Privacy</h3>
 <p>HarpLegend is intended for users <strong>13 and older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has created an account, contact us and we will delete the account and associated data.</p>
 <hr>
-<h3>8. Your Rights</h3>
+<h3>9. Your Rights</h3>
 <h3>European Economic Area and UK (GDPR)</h3>
 <ul>
   <li>Access — request a copy of your personal data</li>
@@ -202,13 +203,13 @@
 <p>To make a request, contact us at: <strong>chewpacastudios@gmail.com</strong></p>
 <p>We will respond within 30–45 days.</p>
 <hr>
-<h3>9. Data Security</h3>
+<h3>10. Data Security</h3>
 <p>Local data is protected by the Android app sandbox. Account credentials are managed by Firebase Authentication and never stored by us directly. Cloud data (Firestore) is protected by Firebase security rules — only you can read or modify your own data. No method of data transmission is 100% secure.</p>
 <hr>
-<h3>10. Changes to This Policy</h3>
+<h3>11. Changes to This Policy</h3>
 <p>We may update this policy from time to time. The "Last Updated" date at the top will reflect any changes. Continued use of the app after changes are posted constitutes acceptance of the revised policy.</p>
 <hr>
-<h3>11. Contact Us</h3>
+<h3>12. Contact Us</h3>
 <h3>ChewPacaStudios (Google Play developer: theo_dev)</h3>
 <p>chewpacastudios@gmail.com</p>
 <p>This policy applies to the HarpLegend Android application (com.chewpacastudios.harphero) only.</p>
