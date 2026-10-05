@@ -30,7 +30,7 @@
 <body>
 <div class="subtitle"><strong>ChewPacaStudios (theo_dev)</strong> · <a href="index.html">Home</a> · <a href="delete-account.html">Delete Account</a></div>
 <h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: October 1, 2026</p>
+<p>ChewPacaStudios  ·  Last Updated: October 5, 2026</p>
 <hr>
 <h3>1. Introduction</h3>
 <p>HarpLegend is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
@@ -51,11 +51,12 @@
 <ul>
   <li><strong>Streak reminders</strong> — if you haven't played today and your streak is at risk</li>
   <li><strong>Inactivity reminders</strong> — after 3 or 7 days without playing</li>
-  <li><strong>Streak milestones</strong> — when you reach a 7, 30, or 60-day streak</li>
+  <li><strong>Streak milestones</strong> — when you reach a streak milestone (2, 4, 7, 10, 14, 21, 30, 45, and 60 days)</li>
   <li><strong>Weekly recap</strong> — a summary of your practice each Sunday</li>
+  <li><strong>Memory review reminders</strong> — when a song you are memorizing in Memory Mode is due for review, at most one a day, and only for songs where you turned reminders on</li>
   <li><strong>App updates</strong> — when a newer version is available</li>
 </ul>
-<p>All notifications are generated on your device using locally stored data. No personal data is sent to any server to produce them. You can disable individual types in <strong>Settings → Notifications</strong>, or disable all notifications in your device's system settings.</p>
+<p>All notifications are generated on your device using locally stored data. No personal data is sent to any server to produce them. You can disable individual types in <strong>Settings → Notifications</strong> (Memory Review reminders can also be turned off for each song), or disable all notifications in your device's system settings.</p>
 <h3>Account and Authentication</h3>
 <p>HarpLegend offers two ways to use the app:</p>
 <ul>
@@ -126,14 +127,14 @@
 <h3>Photo Library</h3>
 <p>If you set a profile picture, the app reads one image from your photo library. That image is stored locally as a file and is never uploaded or transmitted.</p>
 <hr>
-<h3>3. Premium Subscription & Lifetime Purchase</h3>
-<p>HarpLegend offers two ways to unlock Premium: an optional monthly subscription ("HarpLegend Premium") or a one-time "Lifetime Premium" purchase, both bought through Google Play. In either case:</p>
+<h3>3. Premium Subscriptions & Lifetime Purchase</h3>
+<p>HarpLegend offers three ways to unlock Premium, all bought through Google Play: a <strong>monthly subscription</strong>, a <strong>yearly subscription</strong> (which may start with a free trial), or a one-time <strong>"Lifetime Premium"</strong> purchase. In every case:</p>
 <ul>
   <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
-  <li>Your Premium status is stored in our cloud database (Firestore) linked to your account — active/expired with a renewal date for the subscription, or permanent for Lifetime Premium</li>
+  <li>Your Premium status is stored in our cloud database (Firestore) linked to your account — active/expired with a renewal date for a subscription, or permanent for Lifetime Premium</li>
   <li>Payment management (renewal, cancellation, refunds, billing history) is handled entirely by Google Play</li>
 </ul>
-<p>You can cancel the monthly subscription at any time via <strong>Google Play → Subscriptions</strong>; cancellation takes effect at the end of the current billing period. Lifetime Premium is a single, non-recurring purchase that never expires and has nothing to cancel. A Google Play Games account is required to purchase either option — Guest accounts cannot make purchases.</p>
+<p>You can cancel a monthly or yearly subscription at any time via <strong>Google Play → Subscriptions</strong>; cancellation takes effect at the end of the current billing period. If your yearly subscription starts with a free trial, you can cancel during the trial and you will not be charged; otherwise it renews as a paid yearly subscription when the trial ends. Lifetime Premium is a single, non-recurring purchase that never expires and has nothing to cancel. A Google Play Games account is required to purchase any of these options — Guest accounts cannot make purchases.</p>
 <hr>
 <h3>4. How We Use Your Information</h3>
 <ul>
@@ -144,16 +145,16 @@
   <li>To improve the app (analytics data)</li>
   <li>To restore your preferences between sessions (local data)</li>
   <li>To serve optional rewarded ads that fund continued development (LevelPlay / ironSource)</li>
-  <li>To verify and manage your Premium subscription or Lifetime Premium purchase (Google Play Billing + Firebase)</li>
+  <li>To verify and manage your Premium subscription (monthly or yearly) or Lifetime Premium purchase (Google Play Billing + Firebase)</li>
 </ul>
 <p>We do not sell your data to third parties.</p>
 <hr>
 <h3>5. Third-Party Services</h3>
 <h3>Firebase Authentication — handles account creation and sign-in securely.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Firestore — stores synced gameplay data and Premium status (subscription or Lifetime Premium) in Google's cloud infrastructure.</h3>
+<h3>Firebase Firestore — stores synced gameplay data and Premium status (monthly or yearly subscription, or Lifetime Premium) in Google's cloud infrastructure.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Cloud Functions — server-side verification of Premium purchase tokens (subscription and Lifetime Premium).</h3>
+<h3>Firebase Cloud Functions — server-side verification of Premium purchase tokens (monthly and yearly subscriptions, and Lifetime Premium).</h3>
 <p>policies.google.com/privacy</p>
 <h3>Firebase Analytics — app usage analytics (consent required).</h3>
 <p>policies.google.com/privacy</p>
@@ -161,7 +162,7 @@
 <p>policies.google.com/privacy</p>
 <h3>Google Play Games — authentication via your Play Games profile.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Google Play Billing — processes all Premium payments (subscription and Lifetime Premium). We never receive or store your payment card details.</h3>
+<h3>Google Play Billing — processes all Premium payments (monthly and yearly subscriptions, and Lifetime Premium). We never receive or store your payment card details.</h3>
 <p>play.google.com/about/play-terms</p>
 <h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK).</h3>
 <p>ironsrc.com/privacypolicy</p>
