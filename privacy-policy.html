@@ -30,7 +30,7 @@
 <body>
 <div class="subtitle"><strong>ChewPacaStudios (theo_dev)</strong> · <a href="index.html">Home</a> · <a href="delete-account.html">Delete Account</a></div>
 <h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: July 18, 2026</p>
+<p>ChewPacaStudios  ·  Last Updated: October 1, 2026</p>
 <hr>
 <h3>1. Introduction</h3>
 <p>HarpLegend is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
@@ -77,6 +77,8 @@
   <li>Harmonica tuning calibration data (recorded frequencies per hole)</li>
 </ul>
 <p>Guest accounts store all of the above locally on your device only — nothing is sent to our servers.</p>
+<h3>Feedback Survey (optional)</h3>
+<p>If you choose to answer an in-app survey, we store your answers in Firebase Firestore with your account, together with details that help us understand them: app version, device model, language, Premium status, gameplay statistics (songs played, active days, streaks, credits), and your pitch-detection settings. If you have consented to analytics, we also store your Firebase Analytics app instance ID so answers can be compared with app usage. Answering is voluntary; free players receive bonus credits whatever they answer. Survey answers are deleted when you delete your account.</p>
 <h3>Leaderboards</h3>
 <p>For Google Play Games accounts, your best score for each song is posted to a global leaderboard. The following is <strong>publicly visible to all players</strong>:</p>
 <ul>
@@ -166,7 +168,7 @@
 <hr>
 <h3>6. Data Deletion</h3>
 <h3>Delete Account (in Profile):</h3>
-<p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
+<p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, survey answers, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
 <p>You may also visit <strong>tgaspe.github.io/harplegend/delete-account</strong> or contact us at <strong>chewpacastudios@gmail.com</strong> to request manual deletion.</p>
 <hr>
 <h3>7. Data Retention</h3>
@@ -175,6 +177,7 @@
   <li><strong>Firebase Analytics data</strong> — per Google's policies (typically 14 months)</li>
   <li><strong>Firebase Auth account</strong> — until account deletion</li>
   <li><strong>Cloud gameplay data (Firestore)</strong> — until account deletion</li>
+  <li><strong>Survey answers (Firestore)</strong> — until account deletion</li>
   <li><strong>Premium status (Firestore)</strong> — until account deletion; subscriptions also end at expiry, Lifetime Premium does not expire</li>
   <li><strong>Ad interaction data (LevelPlay)</strong> — per ironSource's data retention policies</li>
   <li><strong>Local device data</strong> — until app uninstall or account deletion</li>
