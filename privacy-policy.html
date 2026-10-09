@@ -30,21 +30,22 @@
 <body>
 <div class="subtitle"><strong>ChewPacaStudios (theo_dev)</strong> · <a href="index.html">Home</a> · <a href="delete-account.html">Delete Account</a></div>
 <h3>Privacy Policy</h3>
-<p>ChewPacaStudios  ·  Last Updated: October 5, 2026</p>
+<p>ChewPacaStudios  ·  Last Updated: October 9, 2026</p>
 <hr>
 <h3>1. Introduction</h3>
-<p>HarpLegend is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app, how it is used, and your rights as a user.</p>
+<p>HarpLegend is developed by <strong>ChewPacaStudios</strong>. This policy explains what information is collected when you use the app on Android or iPhone, how it is used, and your rights as a user.</p>
 <p>By using HarpLegend, you agree to the practices described here.</p>
-<h3>App Package: com.chewpacastudios.harphero</h3>
+<h3>Android app: com.chewpacastudios.harphero (Google Play)</h3>
+<h3>iOS app: com.chewpacastudios.harplegend (App Store)</h3>
 <h3>Contact: chewpacastudios@gmail.com</h3>
 <hr>
 <h3>2. Information We Collect</h3>
 <h3>Microphone</h3>
-<p>HarpLegend uses your microphone to detect harmonica notes during gameplay. This audio is:</p>
+<p>HarpLegend uses your microphone to detect harmonica notes during gameplay and microphone calibration. This audio is:</p>
 <ul>
   <li>Processed entirely on your device</li>
   <li>Never recorded, stored, or transmitted</li>
-  <li>Only active during active gameplay sessions</li>
+  <li>Only active while you play or calibrate</li>
 </ul>
 <h3>Notifications</h3>
 <p>HarpLegend may send you local notifications to support your practice habit:</p>
@@ -58,30 +59,35 @@
 </ul>
 <p>All notifications are generated on your device using locally stored data. No personal data is sent to any server to produce them. You can disable individual types in <strong>Settings → Notifications</strong> (Memory Review reminders can also be turned off for each song), or disable all notifications in your device's system settings.</p>
 <h3>Account and Authentication</h3>
-<p>HarpLegend offers two ways to use the app:</p>
+<p>HarpLegend offers these ways to use the app:</p>
 <ul>
-  <li><strong>Google Play Games</strong> — sign in using your Play Games profile. We receive a secure authentication token. No email address or password is collected or stored by us. Your Play Games display name is used to generate a username.</li>
-  <li><strong>Guest account</strong> — use the app anonymously. A temporary Firebase anonymous account is created. No personal information is collected and all data stays on your device only.</li>
+  <li><strong>Google Play Games (Android)</strong> — sign in with your Play Games profile. We receive a secure authentication token. Your Play Games display name is used to suggest a username.</li>
+  <li><strong>Sign in with Apple (iPhone)</strong> — sign in with your Apple Account. Apple gives us a unique identifier and an email address, which may be a private relay address if you choose "Hide My Email". We do not ask Apple for your name, and we never use your email for marketing or show it to other players.</li>
+  <li><strong>Guest account</strong> — use the app without signing in. An anonymous Firebase account is created. Your gameplay data stays on your device (see Premium below for the one exception).</li>
 </ul>
-<p>We do not collect or store email addresses or passwords.</p>
+<p>We do not collect or store passwords. Your account is managed by Firebase Authentication.</p>
 <h3>Username</h3>
-<p>When you sign in with Google Play Games for the first time, a username is automatically generated from your Play Games display name. This username is:</p>
+<p>Signed-in players have a username. On Android it is generated automatically from your Play Games display name; on iPhone you choose your own nickname. Your username is:</p>
 <ul>
-  <li>Stored in our cloud database to ensure uniqueness across all players</li>
+  <li>Stored in our cloud database (Firebase Firestore) to keep it unique across all players</li>
   <li>Publicly visible on in-game leaderboards</li>
 </ul>
 <h3>Gameplay Statistics and Progress</h3>
-<p>For Google Play Games accounts, the following is synced to our cloud database (Firebase Firestore):</p>
+<p>For signed-in accounts, the following is synced to our cloud database (Firebase Firestore) so you can restore it on another device:</p>
 <ul>
-  <li>Total songs played, play time, note accuracy stats, streaks</li>
-  <li>Personal best score, accuracy, and combo per song</li>
+  <li>Songs played, play time, note accuracy stats, streaks, and streak shields</li>
+  <li>Play credits and challenge progress</li>
+  <li>Personal best score, accuracy, and combo per song, and songs you have unlocked</li>
+  <li>Memory Mode progress (review schedule and how many free Memory runs you have used)</li>
   <li>Harmonica tuning calibration data (recorded frequencies per hole)</li>
+  <li>The number of songs you have uploaded (not the songs themselves)</li>
+  <li>Your Premium status</li>
 </ul>
-<p>Guest accounts store all of the above locally on your device only — nothing is sent to our servers.</p>
+<p>Guest accounts keep all of the above on the device only.</p>
 <h3>Feedback Survey (optional)</h3>
-<p>If you choose to answer an in-app survey, we store your answers in Firebase Firestore with your account, together with details that help us understand them: app version, device model, language, Premium status, gameplay statistics (songs played, active days, streaks, credits), and your pitch-detection settings. If you have consented to analytics, we also store your Firebase Analytics app instance ID so answers can be compared with app usage. Answering is voluntary; free players receive bonus credits whatever they answer. Survey answers are deleted when you delete your account.</p>
+<p>If you choose to answer an in-app survey, we store your answers in Firebase Firestore with your account, together with details that help us understand them: app version, device model, language, Premium status, gameplay statistics (songs played, active days, streaks, credits), and your pitch-detection settings. If you have consented to analytics, we also store your Firebase Analytics app instance ID so answers can be compared with app usage. Answering is voluntary; free players receive bonus credits whatever they answer. Guests cannot answer surveys. Survey answers are deleted when you delete your account.</p>
 <h3>Leaderboards</h3>
-<p>For Google Play Games accounts, your best score for each song is posted to a global leaderboard. The following is <strong>publicly visible to all players</strong>:</p>
+<p>For signed-in accounts, your best score for each song is posted to a global leaderboard. The following is <strong>publicly visible to all players</strong>:</p>
 <ul>
   <li>Username</li>
   <li>Score, accuracy, and best combo per song</li>
@@ -91,50 +97,60 @@
 <p>We use Google Firebase Analytics to understand how the app is used. It collects:</p>
 <ul>
   <li>Device model, OS version, and app version</li>
-  <li>Session duration and usage patterns</li>
+  <li>Session duration, screens viewed, and usage patterns</li>
   <li>General location (country/region, derived from IP address)</li>
 </ul>
-<p>We also send custom events when you play songs:</p>
+<p>We also send our own events:</p>
 <ul>
-  <li><strong>song_started</strong> — song name, harp key, playback speed, practice mode</li>
-  <li><strong>song_completed</strong> — song name, score, accuracy, grade, note counts, duration</li>
-  <li><strong>song_quit</strong> — song name, seconds played</li>
+  <li><strong>Songs</strong> — song started, completed, or quit, with the song name, harp key, speed, mode, score, accuracy, grade, note counts, and duration</li>
+  <li><strong>Premium</strong> — when the Premium screen is shown or closed, the plan you look at, its price and currency, whether a free trial is offered, and whether a purchase or restore succeeded, failed, or was cancelled</li>
+  <li><strong>Rewarded ads and credits</strong> — when an ad is offered, requested, or completed, and when you run out of credits</li>
+  <li><strong>Challenges and onboarding</strong> — challenges viewed, started, progressed, and completed, and when you finish onboarding</li>
+  <li><strong>Feedback survey</strong> — when the survey is shown, opened, dismissed, or submitted</li>
+  <li>Whether you are a Premium player (as a user property)</li>
 </ul>
 <p>Users in the EU, EEA, and UK are asked for explicit consent before analytics collection begins. Outside these regions, analytics is enabled by default. You can change your preference at any time in <strong>Settings → Manage Data Consent</strong>.</p>
 <h3>Firebase Crashlytics</h3>
-<p>We use Firebase Crashlytics to receive anonymous crash reports. It collects:</p>
+<p>We use Firebase Crashlytics to receive crash reports. It collects:</p>
 <ul>
   <li>Device model, OS version, and app version</li>
   <li>A stack trace describing where the crash occurred</li>
-  <li>No personally identifiable information is included</li>
+  <li>No name, email, or other directly identifying information</li>
 </ul>
 <p>EU, EEA, and UK users are asked for explicit consent before crash reports are sent. Outside these regions, crash reporting is enabled by default. You can change this preference in <strong>Settings → Manage Data Consent</strong>.</p>
 <h3>Rewarded Ads (Unity LevelPlay / ironSource)</h3>
 <p>HarpLegend shows optional rewarded ads powered by Unity LevelPlay (ironSource). Watching an ad is always your choice — it earns you a free play credit. LevelPlay and its ad network partners may collect:</p>
 <ul>
-  <li>Device identifiers (e.g. Android Advertising ID)</li>
+  <li>Device advertising identifiers — the Android Advertising ID, or on iPhone the IDFA, only if you allow tracking</li>
   <li>IP address and coarse location (derived from IP)</li>
   <li>Ad interaction data (views, completions, skips)</li>
 </ul>
-<p>This data is used to serve and measure ads. EU, EEA, and UK users are asked for explicit consent before personalized ads are shown. Outside these regions, personalized ads may be shown by default based on your device's ad settings. You can opt out of ad personalization at any time in <strong>Settings → Manage Data Consent</strong>, or at the device level via <strong>Settings → Privacy → Ads → Opt out of Ads Personalization</strong>.</p>
+<p>This data is used to serve and measure ads. On iPhone, the app asks for your permission before any tracking (App Tracking Transparency); if you choose "Ask App Not to Track", your IDFA is not shared, and you can change this later in <strong>Settings → Privacy & Security → Tracking</strong>. EU, EEA, and UK users are also asked for explicit consent before personalized ads are shown, and we do not ask for tracking if you decline. Outside these regions, personalized ads may be shown based on your device's ad settings. You can opt out of ad personalization at any time in <strong>Settings → Manage Data Consent</strong>, or on Android via <strong>Settings → Privacy → Ads</strong>.</p>
 <p>Advertising data practices are governed by ironSource's Privacy Policy at <strong>ironsrc.com/privacypolicy</strong>.</p>
+<h3>Device Integrity (Android)</h3>
+<p>On Android, the app uses Google Play Integrity to check that it is running on a genuine, unmodified device. Google issues an integrity token, which our Cloud Function verifies; the result is used only to protect play credits from tampering and is not stored with your profile. A failed check is also recorded as an analytics event (if analytics is enabled).</p>
+<h3>Song Downloads</h3>
+<p>When you stream or download a song, the app requests a temporary download link from our Cloud Function using your account. Downloaded songs are stored on your device.</p>
 <h3>Profile and Local Data</h3>
 <p>The following is stored <strong>only on your device</strong> and is never transmitted:</p>
 <ul>
   <li>Settings (volume, sensitivity, visual preferences, audio offset)</li>
   <li>Profile picture</li>
+  <li>Songs you upload (MIDI and audio files)</li>
 </ul>
 <h3>Photo Library</h3>
-<p>If you set a profile picture, the app reads one image from your photo library. That image is stored locally as a file and is never uploaded or transmitted.</p>
+<p>If you set a profile picture, you choose one image from your photo library. That image is stored locally as a file and is never uploaded or transmitted.</p>
 <hr>
 <h3>3. Premium Subscriptions & Lifetime Purchase</h3>
-<p>HarpLegend offers three ways to unlock Premium, all bought through Google Play: a <strong>monthly subscription</strong>, a <strong>yearly subscription</strong> (which may start with a free trial), or a one-time <strong>"Lifetime Premium"</strong> purchase. In every case:</p>
+<p>HarpLegend offers three ways to unlock Premium, bought through Google Play on Android or the App Store on iPhone: a <strong>monthly subscription</strong>, a <strong>yearly subscription</strong> (which may start with a free trial), or a one-time <strong>"Lifetime Premium"</strong> purchase. You can buy as a guest or while signed in. In every case:</p>
 <ul>
-  <li>Your Google Play purchase token is sent to our secure Firebase Cloud Function for server-side verification — we never receive or store your payment card details</li>
+  <li>The store's proof of purchase — a Google Play purchase token, or an App Store signed transaction — is sent to our secure Firebase Cloud Function for server-side verification. We never receive or store your payment card details</li>
+  <li>On iPhone, each purchase carries an anonymous identifier derived from your account ID, so we can match it to your account</li>
   <li>Your Premium status is stored in our cloud database (Firestore) linked to your account — active/expired with a renewal date for a subscription, or permanent for Lifetime Premium</li>
-  <li>Payment management (renewal, cancellation, refunds, billing history) is handled entirely by Google Play</li>
+  <li>We keep a purchase record (the store's transaction or purchase identifier, the product, and the accounts it has been linked to) so the purchase can be restored to the right account and cannot be claimed by someone else</li>
+  <li>Payment management (renewal, cancellation, refunds, billing history) is handled entirely by Google Play or Apple</li>
 </ul>
-<p>You can cancel a monthly or yearly subscription at any time via <strong>Google Play → Subscriptions</strong>; cancellation takes effect at the end of the current billing period. If your yearly subscription starts with a free trial, you can cancel during the trial and you will not be charged; otherwise it renews as a paid yearly subscription when the trial ends. Lifetime Premium is a single, non-recurring purchase that never expires and has nothing to cancel. A Google Play Games account is required to purchase any of these options — Guest accounts cannot make purchases.</p>
+<p>You can cancel a monthly or yearly subscription at any time via <strong>Google Play → Subscriptions</strong> on Android, or <strong>Settings → your name → Subscriptions</strong> on iPhone; cancellation takes effect at the end of the current billing period. If your yearly subscription starts with a free trial, you can cancel during the trial and you will not be charged; otherwise it renews as a paid yearly subscription when the trial ends. Lifetime Premium is a single, non-recurring purchase that never expires and has nothing to cancel. If you buy as a guest and later sign in, your purchase follows you to your account.</p>
 <hr>
 <h3>4. How We Use Your Information</h3>
 <ul>
@@ -142,44 +158,53 @@
   <li>To authenticate you and secure your account (Firebase Auth)</li>
   <li>To sync and restore your game data across devices (Firestore)</li>
   <li>To power global leaderboards (username and scores)</li>
-  <li>To improve the app (analytics data)</li>
+  <li>To improve the app (analytics data and optional survey answers)</li>
   <li>To restore your preferences between sessions (local data)</li>
   <li>To serve optional rewarded ads that fund continued development (LevelPlay / ironSource)</li>
-  <li>To verify and manage your Premium subscription (monthly or yearly) or Lifetime Premium purchase (Google Play Billing + Firebase)</li>
+  <li>To verify and manage your Premium subscription or Lifetime Premium purchase (Google Play Billing, App Store, and Firebase)</li>
+  <li>To protect play credits from tampering (Play Integrity, Android)</li>
 </ul>
 <p>We do not sell your data to third parties.</p>
 <hr>
 <h3>5. Third-Party Services</h3>
 <h3>Firebase Authentication — handles account creation and sign-in securely.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Firestore — stores synced gameplay data and Premium status (monthly or yearly subscription, or Lifetime Premium) in Google's cloud infrastructure.</h3>
+<h3>Firebase Firestore — stores synced gameplay data, usernames, survey answers, Premium status, and purchase records in Google's cloud infrastructure.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Cloud Functions — server-side verification of Premium purchase tokens (monthly and yearly subscriptions, and Lifetime Premium).</h3>
+<h3>Firebase Cloud Functions and Cloud Storage — server-side purchase verification, account deletion, leaderboard scores, and song downloads.</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Analytics — app usage analytics (consent required).</h3>
+<h3>Firebase Analytics — app usage analytics (consent required in EU/EEA/UK).</h3>
 <p>policies.google.com/privacy</p>
-<h3>Firebase Crashlytics — anonymous crash reporting (consent required).</h3>
+<h3>Firebase Crashlytics — crash reporting (consent required in EU/EEA/UK).</h3>
 <p>policies.google.com/privacy</p>
-<h3>Google Play Games — authentication via your Play Games profile.</h3>
+<h3>Google Play Games — authentication via your Play Games profile (Android).</h3>
 <p>policies.google.com/privacy</p>
-<h3>Google Play Billing — processes all Premium payments (monthly and yearly subscriptions, and Lifetime Premium). We never receive or store your payment card details.</h3>
+<h3>Google Play Billing and Play Integrity — processes Premium payments and checks device integrity on Android. We never receive or store your payment card details.</h3>
 <p>play.google.com/about/play-terms</p>
-<h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK).</h3>
+<h3>Sign in with Apple — authentication via your Apple Account (iPhone).</h3>
+<p>apple.com/legal/privacy</p>
+<h3>App Store (Apple In-App Purchase) — processes Premium payments on iPhone. We never receive or store your payment card details.</h3>
+<p>apple.com/legal/privacy</p>
+<h3>Unity LevelPlay (ironSource) — serves optional rewarded ads (consent required in EU/EEA/UK; tracking permission required on iPhone).</h3>
 <p>ironsrc.com/privacypolicy</p>
 <hr>
 <h3>6. Data Deletion</h3>
 <h3>Delete Account (in Profile):</h3>
-<p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, survey answers, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
+<p>Permanently deletes your Firebase Authentication account, username, all stats, scores, tuning data, Memory Mode progress, survey answers, and leaderboard entries. Local device data is also cleared. This action cannot be undone.</p>
+<p>If you signed in with Apple, deleting your account also revokes HarpLegend's Sign in with Apple access. If that step cannot be completed, your account is still deleted and the app tells you how to remove HarpLegend in <strong>Settings → your name → Sign in with Apple</strong>.</p>
+<p>Purchase records (see section 3) are kept after deletion so that a subscription or Lifetime Premium bought with your store account can still be restored. Deleting your HarpLegend account does not cancel a subscription — cancel it in Google Play or the App Store.</p>
 <p>You may also visit <strong>tgaspe.github.io/harplegend/delete-account</strong> or contact us at <strong>chewpacastudios@gmail.com</strong> to request manual deletion.</p>
 <hr>
 <h3>7. Data Retention</h3>
 <ul>
   <li><strong>Microphone audio</strong> — never retained</li>
   <li><strong>Firebase Analytics data</strong> — per Google's policies (typically 14 months)</li>
+  <li><strong>Crash reports</strong> — per Google's policies (typically 90 days)</li>
   <li><strong>Firebase Auth account</strong> — until account deletion</li>
-  <li><strong>Cloud gameplay data (Firestore)</strong> — until account deletion</li>
+  <li><strong>Cloud gameplay data and username (Firestore)</strong> — until account deletion</li>
   <li><strong>Survey answers (Firestore)</strong> — until account deletion</li>
   <li><strong>Premium status (Firestore)</strong> — until account deletion; subscriptions also end at expiry, Lifetime Premium does not expire</li>
+  <li><strong>Purchase records (Firestore)</strong> — kept after account deletion, to restore purchases and prevent fraud</li>
   <li><strong>Ad interaction data (LevelPlay)</strong> — per ironSource's data retention policies</li>
   <li><strong>Local device data</strong> — until app uninstall or account deletion</li>
   <li><strong>Guest session identifier</strong> — deleted on app uninstall</li>
@@ -195,7 +220,7 @@
   <li>Rectification — request correction of inaccurate data</li>
   <li>Erasure — delete your account in-app or contact us</li>
   <li>Portability — receive your data in a machine-readable format</li>
-  <li>Withdraw Consent — change analytics and crash report preferences in <strong>Settings → Manage Data Consent</strong></li>
+  <li>Withdraw Consent — change analytics, crash report, and ad preferences in <strong>Settings → Manage Data Consent</strong></li>
   <li>Restrict — request limits on how your data is used</li>
 </ul>
 <h3>California Residents (CCPA)</h3>
@@ -208,7 +233,7 @@
 <p>We will respond within 30–45 days.</p>
 <hr>
 <h3>10. Data Security</h3>
-<p>Local data is protected by the Android app sandbox. Account credentials are managed by Firebase Authentication and never stored by us directly. Cloud data (Firestore) is protected by Firebase security rules — only you can read or modify your own data. No method of data transmission is 100% secure.</p>
+<p>Local data is protected by the Android and iOS app sandboxes. Account credentials are managed by Firebase Authentication and never stored by us directly. Cloud data (Firestore) is protected by Firebase security rules — only you can read or modify your own data, and purchase records can only be written by our servers. No method of data transmission is 100% secure.</p>
 <hr>
 <h3>11. Changes to This Policy</h3>
 <p>We may update this policy from time to time. The "Last Updated" date at the top will reflect any changes. Continued use of the app after changes are posted constitutes acceptance of the revised policy.</p>
@@ -216,7 +241,7 @@
 <h3>12. Contact Us</h3>
 <h3>ChewPacaStudios (Google Play developer: theo_dev)</h3>
 <p>chewpacastudios@gmail.com</p>
-<p>This policy applies to the HarpLegend Android application (com.chewpacastudios.harphero) only.</p>
+<p>This policy applies to the HarpLegend app for Android (com.chewpacastudios.harphero) and iPhone (com.chewpacastudios.harplegend).</p>
 <hr>
 <p><em><a href="index.html">← Back to Home</a></em></p>
 </body>
