@@ -1,94 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HarpLegend</title>
-  <link rel="icon" type="image/png" href="assets/icon.png">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 4rem 1.5rem 4rem;
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      color: #333;
-      line-height: 1.7;
-      text-align: center;
-    }
-    .logo {
-      width: 72px;
-      height: 72px;
-      margin: 0 auto 1.2rem;
-      border-radius: 18px;
-      display: block;
-    }
-    h1 { font-size: 28px; margin: 0 0 4px; }
-    .subtitle { color: #777; font-size: 15px; margin-bottom: 2.5rem; }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-      max-width: 360px;
-      margin: 0 auto;
-    }
-    .btn {
-      display: block;
-      padding: 0.9rem 1.2rem;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      font-size: 15px;
-      transition: border-color 0.15s, background 0.15s;
-    }
-    .btn:hover {
-      border-color: #3030F1;
-      background: #f5f6ff;
-    }
-    .btn .desc {
-      display: block;
-      font-weight: normal;
-      color: #777;
-      font-size: 13px;
-      margin-top: 2px;
-    }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 2.5rem 0; }
-    footer { color: #999; font-size: 13px; }
-    footer a { color: #3030F1; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HarpLegend: learn the harmonica by playing real songs</title>
+<meta name="description" content="HarpLegend teaches the diatonic harmonica with real songs: blow, draw and bend in time while the game listens through your phone's microphone. Out now on Android.">
+<meta name="theme-color" content="#191E23">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chewpacastudios.com/harplegend/">
+<meta property="og:title" content="HarpLegend">
+<meta property="og:description" content="Learn the diatonic harmonica by playing real songs. Out now on Android.">
+<meta property="og:image" content="https://chewpacastudios.com/harplegend/assets/og-harplegend.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@700;800&amp;display=swap">
+<link rel="stylesheet" href="site.css">
 </head>
-<body>
+<body class="app-page--harp">
 
-<img class="logo" src="assets/icon.png" alt="HarpLegend icon">
-<h1>HarpLegend</h1>
-<div class="subtitle">ChewPacaStudios (theo_dev)</div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="assets/paca-96.png" alt="" width="44" height="44"><span>ChewPaca<span>Studios</span></span></a>
+    <nav class="nav" aria-label="HarpLegend">
+      <a href="#instrument">Harmonica</a>
+      <a href="#how">How it works</a>
+      <a href="#help">Help and legal</a>
+    </nav>
+  </div>
+</header>
 
-<div class="links">
-  <a class="btn" href="privacy-policy.html">
-    Privacy Policy
-    <span class="desc">What we collect and how it's used</span>
-  </a>
-  <a class="btn" href="terms.html">
-    Terms of Service
-    <span class="desc">The rules for using HarpLegend and Premium</span>
-  </a>
-  <a class="btn" href="delete-account.html">
-    Delete Account
-    <span class="desc">Remove your account and data</span>
-  </a>
-  <a class="btn" href="song-guide.html">
-    Song Chart Guide
-    <span class="desc">How to create and upload your own songs</span>
-  </a>
-</div>
+<main>
+<section class="app-hero" aria-label="HarpLegend">
+  <div class="wrap">
+    <div class="app-hero__text">
+      <p class="eyebrow">Out now on Android</p>
+      <h1>HarpLegend</h1>
+      <p class="pitch">Learn the diatonic harmonica by playing real songs. Blow, draw and bend in time while the game listens.</p>
+      <div class="btns">
+        <a class="badge-play" href="https://play.google.com/store/apps/details?id=com.chewpacastudios.harphero"><img src="assets/google-play-badge.png" alt="Get HarpLegend on Google Play" width="646" height="250"></a>
+        <span class="btn btn--soon">App Store: coming soon</span>
+      </div>
+    </div>
+    <div class="phone-frame">
+      <picture><source type="image/webp" srcset="assets/shot-play.webp"><img src="assets/shot-play.jpg" alt="HarpLegend playing Bella Ciao: notes falling onto the harmonica's holes, with a Perfect hit" width="640" height="1391"></picture>
+    </div>
+  </div>
+</section>
 
-<hr>
+<section id="instrument" style="border-top: 1px solid var(--card)">
+  <div class="wrap section">
+    <h2 class="section-title">Made for the diatonic harmonica</h2>
+    <p class="section-lead">The ten-hole harmonica most players start with.</p>
+    <ul class="tiles tiles--narrow">
+      <li class="tile"><b>All 12 keys</b><span>Pick the key of the harmonica you own</span></li>
+      <li class="tile"><b>Bends and overblows</b><span>Drills with live pitch feedback</span></li>
+      <li class="tile"><b>45+ songs</b><span>Plus your own, from a MIDI file and an audio track</span></li>
+    </ul>
+  </div>
+</section>
 
-<footer>
-  Developer: theo_dev · Questions? Contact <a href="mailto:chewpacastudios@gmail.com">chewpacastudios@gmail.com</a>
+<section class="band" id="how">
+  <div class="wrap section">
+    <h2 class="section-title">How it works</h2>
+    <ol class="steps">
+      <li><span class="num">1</span><b>Follow the notes</b><p>Notes scroll down ten lanes, one for each hole of the harmonica.</p></li>
+      <li><span class="num">2</span><b>Play them in time</b><p>Blow, draw and bend as each note reaches the line. The microphone listens and scores every one.</p></li>
+      <li><span class="num">3</span><b>Climb the path</b><p>A path of levels takes you from your first note to blues licks, with practice speeds and a memory mode.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="help">
+  <div class="wrap section">
+    <h2 class="section-title">Help and legal</h2>
+    <div class="tiles">
+      <a class="tile" href="song-guide.html"><b>Song guide</b><span>How to add your own songs</span></a>
+      <a class="tile" href="privacy-policy.html"><b>Privacy Policy</b><span>What we collect and how it’s used</span></a>
+      <a class="tile" href="terms.html"><b>Terms of Service</b><span>The rules for using HarpLegend and Premium</span></a>
+      <a class="tile" href="delete-account.html"><b>Delete Account</b><span>Remove your account and data</span></a>
+      <a class="tile" href="mailto:support@chewpacastudios.com"><b>Contact support</b><span data-email>support@chewpacastudios.com</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 ChewPacaStudios</span>
+    <a href="/" style="color: var(--studio)">All apps</a>
+  </div>
 </footer>
 
 </body>
